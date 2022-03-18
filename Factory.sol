@@ -9,17 +9,16 @@ contract StorageFactory {
     Storage[] public StorageArray;          //create array (type) Storage. 
     function createStorageContract() public {
         Storage Storage = new Storage();   //create Storage type object namely Storage
-                                                            //then new Storage() contracts without any inputs()??????????????? 
-                                                                                                                //which inputs should we write????
-
+                                                            //then new Storage() contracts without any 
+                                                            
         StorageArray.push(Storage); //When createStorageContract runs it is added to the array
     
     }
-    // } here we can deploy Storage.sol contract from this StoraceFactory.sol contract.
+    // } here we can deploy Storage.sol contract from this Factory.sol contract.
 
 
 
-//call store and retrieve functions in the Storage.sol from StorageFactory.sol
+//call store and retrieve functions in the Storage.sol from Factory.sol
     function sfStore(uint256 _StorageIndex, uint256 _StorageNumber) public {
 
         //_StorageIndex allows to choose which Storage[] contract in the created list that we wanna interact with
