@@ -42,8 +42,3 @@ contract StorageFactory {
     }
 }
 
-
-
-
-        // Address or ABI, both info can be used to call different contracts. In that case Address is used from the Storage[] aray. 
-        // how to get contract info with ABI?????????????
